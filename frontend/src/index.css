@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Shikamaru";
+  src: url("fonts/Shikamaru.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("./assets/fonts/JetBrainsMono-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Zodiak";
+  src: url("fonts/Zodiak-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Frozito";
+  src: url("fonts/Frozito-eZ99g.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Unicorn";
+  src: url("fonts/GoodUnicornRegular-Rxev.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Shikamaru", sans-serif;
+  background: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+pre,
+code,
+.font-jetbrains {
+  font-family: "JetBrainsMono", monospace;
+}
+
+.font-shikamaru {
+  font-family: "Shikamaru", sans-serif;
+}
+.font-frozito {
+  font-family: "Frozito", sans-serif;
+}
+.font-zodiac {
+  font-family: "Zodiac", sans-serif;
+}
+
+
+
+.editor-font {
+  font-family: "JetBrainsMono", monospace;
+}
+
+.page-gradient-dark {
+  background:
+    radial-gradient(circle at top left, rgba(0, 204, 204, 0.12), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.14), transparent 28%),
+    linear-gradient(180deg, #0b1220 0%, #111827 100%);
+}
+
+.page-gradient-light {
+  background:
+    radial-gradient(circle at top left, rgba(0, 204, 204, 0.12), transparent 26%),
+    radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.08), transparent 28%),
+    linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+/* Premium animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.animate-pulse-soft {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Glass morphism */
+.glass {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Custom scrollbar */
+.panel-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.panel-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.panel-scroll::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.3);
+  border-radius: 3px;
+}
+
+.panel-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.5);
+}
