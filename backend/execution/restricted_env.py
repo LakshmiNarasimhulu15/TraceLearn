@@ -50,7 +50,6 @@ COMMON_EXCEPTIONS = {
 
 
 ALLOWED_BUILTINS = {
-    # Basic I/O
     "print": print,
     "input": input,
 

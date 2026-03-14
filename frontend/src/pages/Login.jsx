@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import bgImage from "../assets/bg-login.png";
+import bgImage from "../assets/bg4.jpeg";
 import { loginUser } from "../services/auth";
 
 const InputField = ({ type, name, placeholder, value, onChange }) => (
